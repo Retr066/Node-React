@@ -27,6 +27,7 @@ Este proyecto incluye un backend en Node.js con TypeScript y un frontend en Reac
     ```bash
     npm run dev
     ```
+
     Esto compilará el código TypeScript y lo ejecutará directamente.
 
 3. **Compilar para producción:**
@@ -36,6 +37,7 @@ Este proyecto incluye un backend en Node.js con TypeScript y un frontend en Reac
     ```bash
     npm run dev
     ```
+
     Esto generará los archivos compilados en el directorio dist.
 
 4.  **Cargar datos en la base de datos (opcional):**
@@ -45,11 +47,13 @@ Este proyecto incluye un backend en Node.js con TypeScript y un frontend en Reac
     ```bash
     npm run build
     ```
+    
     Luego, ejecuta el script de carga de datos con:
 
     ``bash
     node dist/loadData.js
     ```
+    
     Nota: Puedes omitir este paso si la base de datos ya tiene los datos necesarios.
 
 
