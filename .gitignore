@@ -4,11 +4,17 @@
 
 
 # Build directories
-/dist
-/build
+/frontend/node_modules
+/frontend/build
+
+/backend/node_modules
+/backend/dist
+
 
 # Environment variables
 .env
+/backend/.env
+/backend/.env
 
 # IDE files
 /.idea
