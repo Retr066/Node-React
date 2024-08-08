@@ -1,4 +1,4 @@
-# My Full-Stack Project
+# Prueba tecnica - Node + React Developer
 
 Este proyecto incluye un backend en Node.js con TypeScript y un frontend en React. A continuación se detallan las instrucciones para configurar y ejecutar ambos componentes.
 
@@ -58,15 +58,18 @@ Este proyecto incluye un backend en Node.js con TypeScript y un frontend en Reac
 
 5. **Configurar variables de entorno**
 
-Crea un archivo `.env` en el directorio del frontend con la siguiente variable de entorno:
+---
 
-   ```
-   export PORT=
-   export MONGO_USER=
-   export MONGO_PASSWORD=
-   export MONGO_DB=
-   export VITE_API_URL=
-   ```
+Asegúrate de configurar las siguientes variables de entorno para el backend:
+
+- `PORT=`: El puerto en el que el servidor escuchará.
+- `MONGO_USER=`: El usuario para acceder a la base de datos MongoDB.
+- `MONGO_PASSWORD=`: La contraseña para acceder a la base de datos MongoDB.
+- `MONGO_DB=`: El nombre de la base de datos MongoDB.
+
+Estas variables deben estar configuradas en el archivo `.env` para que el backend funcione correctamente.
+
+---
 
 ## Frontend
 
@@ -97,7 +100,7 @@ Crea un archivo `.env` en el directorio del frontend con la siguiente variable d
    Asegúrate de configurar la variable de entorno `VITE_API_URL` para que apunte a tu backend:
 
    ```
-   export VITE_API_URL=
+    VITE_API_URL=
    ```
 
 ## Notas
