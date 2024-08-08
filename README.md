@@ -1,65 +1,59 @@
-# Prueba de backend en NodeJS
+# My Full-Stack Project
 
-La primer parte de la prueba tiene como objetivo evaluar tus conocimientos y competencias con la tecnologíad NodeJS y Mongodb.
+Este proyecto incluye un backend en Node.js con TypeScript y un frontend en React. A continuación se detallan las instrucciones para configurar y ejecutar ambos componentes.
 
-## Descripción de la tarea
+## Backend
 
-La siguiente tarea consiste en cargar y almacenar los datos de un archivo en una base de datos local con Mongodb y permitir consumir la información almacenada, para lograr estos tienes que: 
+### Requisitos
 
-1.  **Cargar los datos a 'Articles':** Utilizar el archivo proporcionado para obtener los datos y guardarlos en una colección en la base de base de datos local.
+- Node.js
+- npm 
 
-2.  **Exponer los datos de obtenidos:** Implementar un endpoint que permita obtener los datos de la colección 'Articles'.
+### Configuración
 
-## Requisitos
+1. **Instalar dependencias**
 
-1. Utilizar **MongoDB** como base de datos para esta aplicación.
-2. Crear una aplicación de NodeJS.
-3. Cargar los datos del archivo `data.json` en una colección llamada `/articles` en la base de datos.
-3. El endpoint de la API debe llamarse `/articles` y responder en **formato JSON**.
+   Navega al directorio del backend y ejecuta:
 
-## Criterios de evaluación
+   ```bash
+   cd backend
+   npm install
+  ```
 
-Tu entrega será evaluada en función de los siguientes criterios:
+2. **Ejecutar en desarrollo**
 
-1.  **Funcionalidad:** ¿Se pueden recuperar los datos a través del endpoint de la API?
-2.  **Calidad de Código y Estructura:** ¿El código está bien estructurado, es legible y sigue las convenciones de NodeJS?. 
-3.  **Manejo de Errores:** ¿Se gestionan los errores y los registros están implementados correctamente?
-3.  **Manejo de la base de datos:** ¿Se logro administrar la base de datos y los datos obtenidos fueron cargado del archivo `data.json`?
-4.  **Bonificaciones:** Se considerarán funcionalidades adicionales o mejoras más allá de los requisitos básicos.
+    Para iniciar el servidor en modo desarrollo, ejecuta:
 
-# Prueba de frontend en React
+    ```bash
+    npm run dev
+    ```
+    Esto compilará el código TypeScript y lo ejecutará directamente.
 
-La segunda parte de la prueba tiene como objetivo evaluar tus capacidades y habilidades en React.
+3. **Compilar para producción:**
 
-## Descripción de la tarea
-La siguiente tarea consiste en crear una aplicación en React que consuma el endpoint `/articles` proporcionado por la API de NodeJS que creaste en el tarea anterior, para lograr eso tienes que: 
+    Para compilar el código TypeScript a JavaScript, ejecuta:
 
-1.  **Consumir endpoint '/articles':** Desarrollar una aplicación en React que se consuma al endpoint `/articles` de la API de NodeJS.
-2.  **Recuperar y mostrar los datos del endpoint:** Implementar interfaz de usuarios que muestre los datos.
+    ```bash
+    npm run dev
+    ```
+    Esto generará los archivos compilados en el directorio dist.
 
-## Requisitos
+4.  **Cargar datos en la base de datos (opcional):**
 
-Asegúrate de cumplir con los siguientes requisitos al desarrollar la aplicación en React. 
+    Si necesitas cargar datos en la base de datos, primero compila el código con:
 
-1. La aplicación debe ser capaz de realizar solicitudes HTTP al endpoint `/articles` de la API de NodeJS.
-2. Utilizar el método adecuado en React para realizar llamadas a la API.
-4. Se debe de crear una vista donde se debe listar los datos obtenidos, puedes ver el [diseño acá](https://www.figma.com/design/QsD5eTs7WIiM9XiMsOcD3C/Design-Flutter---React--Node?node-id=0-1&t=ADIVGG0xYt97fBFt-1) .
-5. Al darle click a un item de la lista se tiene que redireccionar al Url del campo llamado `url`. 
+    ```bash
+    npm run build
+    ```
+    Luego, ejecuta el script de carga de datos con:
 
-## Criterios de evaluación
+    ``bash
+    node dist/loadData.js
+    ```
+    Nota: Puedes omitir este paso si la base de datos ya tiene los datos necesarios.
 
-Tu entrega será evaluada en base a los siguientes criterios:
 
-1.  **Funcionalidad:** ¿La aplicación de React se conecta con éxito al endpoint `/articles` de la API de NodeJS y muestra los datos obtenidos?
-2.  **Interfaz de Usuario:** ¿La interfaz de usuario es amigable y presenta los datos de manera clara y legible según el diseño?
-3.  **Manejo de Datos:** ¿La aplicación en React maneja los datos de manera efectiva, sin errores ni inconsistencias?
-4.  **Calidad de Código y Estructura:** ¿El código está organizado, sigue las mejores prácticas de React y es fácil de entender?
-5.  **Manejo de Errores:** ¿La aplicación maneja adecuadamente los errores en caso de problemas de conectividad o de datos faltantes?
-6.  **Bono:** Se considerarán funcionalidades adicionales o mejoras más allá de los requisitos básicos.
 
-## Entrega
-
-Una vez que hayas completado las tareas, sube tu codigo a un repositorio de GitHub con su documentación para su debida evaluación.
 
 ## Notas importantes
 
