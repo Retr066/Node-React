@@ -15,18 +15,18 @@ Este proyecto incluye un backend en Node.js con TypeScript y un frontend en Reac
 
    Navega al directorio del backend y ejecuta:
 
-   ...
+   ```
    cd backend
    npm install
-   ...
+   ```
 
 2. **Ejecutar en desarrollo**
 
    Para iniciar el servidor en modo desarrollo, ejecuta:
 
-   ...
+   ```
    npm run dev
-   ...
+   ```
 
    Esto ejecutará el servidor con TypeScript en modo desarrollo.
 
@@ -34,9 +34,9 @@ Este proyecto incluye un backend en Node.js con TypeScript y un frontend en Reac
 
    Para compilar el código TypeScript a JavaScript, ejecuta:
 
-   ...
+   ```
    npm run build
-   ...
+   ```
 
    Esto generará los archivos compilados en el directorio `dist`.
 
@@ -44,15 +44,15 @@ Este proyecto incluye un backend en Node.js con TypeScript y un frontend en Reac
 
    Si necesitas cargar datos en la base de datos, primero compila el código con:
 
-   ...
+   ```
    npm run build
-   ...
+   ```
 
    Luego, ejecuta el script de carga de datos con:
 
-   ...
+   ```
    node dist/loadData.js
-   ...
+   ```
 
    Nota: Puedes omitir este paso si la base de datos ya tiene los datos necesarios.
 
@@ -60,13 +60,13 @@ Este proyecto incluye un backend en Node.js con TypeScript y un frontend en Reac
 
 Crea un archivo `.env` en el directorio del frontend con la siguiente variable de entorno:
 
-   ...
+   ```
    export PORT=
    export MONGO_USER=
    export MONGO_PASSWORD=
    export MONGO_DB=
    export VITE_API_URL=
-   ...
+   ```
 
 ## Frontend
 
@@ -81,24 +81,24 @@ Crea un archivo `.env` en el directorio del frontend con la siguiente variable d
 
    Navega al directorio del frontend y ejecuta:
 
-   ...
+   ```
    cd frontend
    npm install
-   ...
+   ```
 
 2. **Ejecutar en desarrollo**
 
    Para iniciar el proyecto de React en modo desarrollo, ejecuta:
 
-   ...
+   ```
    npm run dev
-   ...
+   ```
 
    Asegúrate de configurar la variable de entorno `VITE_API_URL` para que apunte a tu backend:
 
-   ...
+   ```
    export VITE_API_URL=
-   ...
+   ```
 
 ## Notas
 
